@@ -1,0 +1,684 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* INÍCIO */
+
+.inicio {
+    width: 100%;
+    height: 100vh;
+    min-height: 700px;
+}
+
+.container-inicio {
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+
+    background-image: url("imagens/image.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+        color: white;
+    position: relative;
+}
+
+
+/* MENU */
+
+.menu {
+    width: 100%;
+    height: 85px;
+    padding: 0 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo,
+.logo-rodape {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo > span,
+.logo-rodape > span {
+    font-family: Georgia, serif;
+    font-size: 43px;
+    color: #c49a69;
+}
+
+.logo h2 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.logo p {
+    font-size: 8px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+.menu nav {
+    display: flex;
+    gap: 30px;
+}
+
+.menu nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.menu nav a:hover {
+    color: #c49a69;
+}
+
+.botao-menu,
+.botao-dourado {
+    background: #c49a69;
+    color: #171310;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 14px 25px;
+    font-size: 14px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.botao-menu:hover,
+.botao-dourado:hover {
+    background: #e0b98b;
+}
+
+
+/* TEXTO INICIAL */
+
+.conteudo-inicio {
+    padding: 45px 6%;
+}
+
+.texto-inicio {
+    max-width: 530px;
+}
+
+.texto-inicio h1 {
+    font-family: Georgia, serif;
+    font-size: 52px;
+    font-weight: normal;
+    line-height: 1.02;
+}
+
+.texto-inicio h1 span,
+.contato h2 span {
+    color: #c49a69;
+    font-style: italic;
+}
+
+.texto-inicio p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 18px 0;
+    max-width: 430px;
+}
+
+.botao-dourado {
+    margin-top: 3px;
+}
+
+
+/* SERVIÇOS */
+
+.servicos {
+    display: flex;
+    align-items: center;
+    padding: 30px 6%;
+    gap: 35px;
+    background: #f4eae3;
+}
+
+.titulo-servicos {
+    min-width: 230px;
+}
+
+.titulo-servicos span,
+.titulo-portfolio span,
+.depoimentos span {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.titulo-servicos h2,
+.titulo-portfolio h2,
+.depoimentos h2 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.titulo-servicos p {
+    margin: 8px 0 15px;
+    line-height: 1.4;
+}
+
+.titulo-servicos a {
+    display: inline-block;
+    background: #171310;
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    border-radius: 25px;
+    font-size: 12px;
+}
+
+.lista-servicos {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.servico {
+    flex: 1;
+    text-align: center;
+    border-left: 1px solid #d4c1b1;
+    padding: 10px;
+}
+
+.servico span {
+    display: block;
+    font-size: 43px;
+    margin-bottom: 15px;
+}
+
+.servico p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+
+/* PORTFÓLIO */
+
+.portfolio {
+    padding: 20px 6px 25px;
+    background: #f4eae3;
+}
+
+.titulo-portfolio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6%;
+    margin-bottom: 15px;
+}
+
+.titulo-portfolio h2 {
+    font-size: 30px;
+}
+
+.titulo-portfolio a {
+    text-decoration: none;
+    color: #171310;
+    border: 1px solid #171310;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+
+.fotos-portfolio {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 0 6%;
+}
+
+.fotos-portfolio img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+
+/* HISTÓRIA */
+
+.historia {
+    width: 100%;
+    min-height: 650px;
+    background-color: #ecd7be;
+    padding: 65px 5%;
+
+}
+
+/* TÍTULO */
+
+.titulo-historia {
+    width: 100%;
+    margin-bottom: 40px;
+    padding-left: 4%;
+}
+
+.titulo-historia h2 {
+    font-size: 38px;
+    font-weight: 400;
+    color: #171310;
+}
+
+/* CONTEÚDO */
+
+.texto-historia {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 65px;
+    width: 100%;
+}
+
+/* TEXTO */
+
+.texto-biografia {
+    width: 58%;
+    color: #171310;
+    font-size: 19px;
+    line-height: 1.55;
+    text-align: justify;
+}
+
+.texto-biografia p {
+    margin-bottom: 5px;
+}
+
+.texto-biografia h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+/* FOTO */
+
+.foto-renan {
+    margin-left: 20px;
+    width: 40%;
+    height: 580px;
+    overflow: hidden;
+    border-radius: 35px;
+}
+
+.foto-renan img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+
+
+/* CONTATO */
+
+.contato {
+    background: #171310;
+    color: white;
+    padding: 35px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contato h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.informacoes {
+    font-size: 13px;
+    line-height: 2.2;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background: #171310;
+    color: white;
+    border-top: 1px solid #9b7955;
+    padding: 20px 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-rodape h3 {
+    font-size: 13px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.logo-rodape small {
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+
+footer p,
+footer a {
+    color: #e5d7ca;
+    font-size: 13px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+
+
+
+/* =================================
+   RESPONSIVIDADE - TABLETS
+================================= */
+
+@media (max-width: 900px) {
+
+    /* MENU */
+    .menu {
+        padding: 0 3%;
+    }
+
+    .menu nav {
+        gap: 15px;
+    }
+
+    .menu nav a {
+        font-size: 12px;
+    }
+
+    /* SERVIÇOS */
+    .servicos {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lista-servicos {
+        width: 100%;
+    }
+
+    /* PORTFÓLIO */
+    .fotos-portfolio {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* HISTÓRIA */
+    .texto-historia {
+        gap: 30px;
+    }
+
+    .texto-biografia {
+        font-size: 16px;
+    }
+
+    .foto-renan {
+        margin-left: 0;
+    }
+}
+
+
+/* =================================
+   RESPONSIVIDADE - CELULARES
+================================= */
+
+@media (max-width: 600px) {
+
+    /* INÍCIO */
+    .inicio {
+        height: 100svh;
+        min-height: 600px;
+    }
+
+    .container-inicio {
+        height: 100%;
+        min-height: 600px;
+        background-position: 65% center;
+    }
+
+    /* MENU */
+    .menu {
+        height: auto;
+        padding: 12px 15px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .logo {
+        gap: 6px;
+    }
+
+    .logo > span {
+        font-size: 32px;
+    }
+
+    .logo h2 {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .logo p {
+        font-size: 7px;
+    }
+
+    .menu nav {
+        order: 3;
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 10px 0;
+        scrollbar-width: none;
+    }
+
+    .menu nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .menu nav a {
+        font-size: 12px;
+        flex-shrink: 0;
+    }
+
+    .botao-menu {
+        padding: 10px 13px;
+        font-size: 11px;
+    }
+
+    /* TEXTO INICIAL */
+    .conteudo-inicio {
+        padding: 65px 20px;
+    }
+
+    .texto-inicio {
+        max-width: 100%;
+    }
+
+    .texto-inicio h1 {
+        font-size: 36px;
+        line-height: 1.08;
+    }
+
+    .texto-inicio p {
+        font-size: 14px;
+        max-width: 280px;
+    }
+
+    /* HISTÓRIA */
+    .historia {
+        padding: 40px 6%;
+        min-height: auto;
+    }
+
+    .titulo-historia {
+        padding-left: 0;
+        margin-bottom: 25px;
+    }
+
+    .titulo-historia h2 {
+        font-size: 27px;
+    }
+
+    .texto-historia {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .texto-biografia {
+        width: 100%;
+        font-size: 15px;
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    .foto-renan {
+        width: 100%;
+        height: 350px;
+        margin-left: 0;
+    }
+
+    /* SERVIÇOS */
+    .servicos {
+        padding: 35px 6%;
+        gap: 25px;
+    }
+
+    .titulo-servicos {
+        min-width: 0;
+    }
+
+    .titulo-servicos h2 {
+        font-size: 30px;
+    }
+
+    .lista-servicos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        gap: 15px;
+    }
+
+    .servico {
+        border-left: none;
+        border-bottom: 1px solid #d4c1b1;
+        padding: 15px 5px;
+    }
+
+    .servico span {
+        font-size: 36px;
+    }
+
+    /* PORTFÓLIO */
+    .portfolio {
+        padding: 25px 0;
+    }
+
+    .titulo-portfolio {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 0 6%;
+    }
+
+    .titulo-portfolio h2 {
+        font-size: 26px;
+    }
+
+    .fotos-portfolio {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding: 0 15px;
+    }
+
+    .fotos-portfolio img {
+        height: 160px;
+    }
+
+    /* DEPOIMENTOS */
+    .depoimentos {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 30px 6%;
+    }
+
+    /* CONTATO */
+    .contato {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 35px 7%;
+        gap: 20px;
+    }
+
+    .contato h2 {
+        font-size: 29px;
+    }
+
+    .informacoes {
+        font-size: 12px;
+    }
+
+    /* RODAPÉ */
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 25px 6%;
+    }
+}
+
+
+/* =================================
+   CELULARES PEQUENOS
+================================= */
+
+@media (max-width: 380px) {
+
+    .texto-inicio h1 {
+        font-size: 31px;
+    }
+
+    .logo h2 {
+        font-size: 10px;
+    }
+
+    .botao-menu {
+        padding: 9px 10px;
+        font-size: 10px;
+    }
+
+    .titulo-historia h2 {
+        font-size: 24px;
+    }
+
+    .fotos-portfolio img {
+        height: 135px;
+    }
+
+}
