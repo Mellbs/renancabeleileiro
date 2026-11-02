@@ -371,6 +371,8 @@ section[id] {
 
 /* ---------- SERVIÇOS ---------- */
 
+
+
 .servicos {
     background: var(--creme);
     padding: 80px 6%;
@@ -582,6 +584,16 @@ footer p {
 .instagram-link:hover {
     color: var(--dourado);
     transform: scale(1.1);
+}
+
+/* Cor dos links do WhatsApp no footer */
+footer a,
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+    color: #ffffff !important;
+    text-decoration: none !important;
 }
 
 /* ---------- BOTÃO FLUTUANTE DO WHATSAPP ---------- */
